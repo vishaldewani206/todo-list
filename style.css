@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(0, 173, 255);
+  background: radial-gradient(
+    circle,
+    rgba(0, 173, 255, 1) 0%,
+    rgba(11, 77, 154, 1) 82%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  color: white;
+  margin-bottom: 2em;
+  filter: drop-shadow(3px 3px 0 black);
+  font-size: 3rem;
+}
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#input-text {
+  width: 90%;
+  height: 40px;
+  border: none;
+  font-size: 1.3rem;
+  background: rgb(27, 45, 59);
+  color: white;
+  padding-left: 0.2em;
+}
+#input-text:focus {
+  outline: none;
+}
+#add-button {
+  width: 7%;
+  height: 40px;
+  background: green;
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+#add-button:hover {
+  opacity: 0.7;
+}
+#add-button:active {
+  opacity: 1;
+}
+#all-tasks {
+  width: 97%;
+}
+.task {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid rgb(143, 143, 143);
+}
+#text {
+  margin-left: 0.5em;
+  font-size: 1.1rem;
+}
+.line-through {
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 786px) {
+  .container {
+    width: 100%;
+  }
+}
